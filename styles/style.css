@@ -1,19 +1,19 @@
 :root {
     --bgColor:#f6b606;
-    --circleColor:#1f1f1f;
-    --secondColor:#a3f965;
+    --circleColor:#363636;
+    --secondColor:#82c452;
     --firdColor:#df5252;
 }
 
 body{
-    max-width: 100vh;
+    
     overflow: hidden;
     background-color: var(--bgColor);
+    max-height: 100vh;
 }
 
 nav{
-    margin: 20px;
-    padding: 10px;
+    
     width: 220px;
     display: flex;
     justify-content: space-between;
@@ -22,4 +22,67 @@ nav{
 
 nav h2{
     margin: 0;
+}
+
+.container {
+    margin: 20px 50px;
+}
+
+.row{
+    display: flex;
+
+}
+
+.col{
+    flex: 1;
+}
+
+.col h1{
+    font-size: 90px;
+    margin-bottom: 100px;
+}
+
+.col p{
+    margin-bottom: 100px;
+}
+
+input{
+    
+    background: none;
+    border: none;
+    border-radius: 30px;
+}
+
+.mail{
+    padding: 20px 50px;
+    width: 350px;
+    background-color: var(--secondColor);
+}
+
+/* .mail:{
+    border: none;
+} */
+
+.btn{
+    margin-left: -150px;
+    padding: 20px 5px;
+    background-color: var(--firdColor);
+    width: 150px;
+}
+
+.circle {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: var(--circleColor);
+    margin: 20px 0 0 -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.circle img{
+    width: 350px;
 }
