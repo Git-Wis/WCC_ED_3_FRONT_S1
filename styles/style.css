@@ -15,6 +15,8 @@
     src: url("../Font/PublicaSans-Light.otf");
 }
 
+
+
 body{
     
     overflow: hidden;
@@ -27,9 +29,22 @@ body{
 nav{
     
     width: 230px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav img:hover{
+    cursor: pointer;
+}
+
+.menu:hover{
+    width: 20%;
+}
+
+.home:hover{
+    width: 69px;
 }
 
 nav h3{
@@ -73,9 +88,10 @@ input{
     font-size: 20px;
 }
 
-/* .mail:{
-    border: none;
-} */
+.mail:focus-visible{
+    outline: none;
+    border:0.5px solid var(--circleColor);
+} 
 
 .btn{
     margin-left: -150px;
@@ -83,6 +99,11 @@ input{
     background-color: var(--firdColor);
     width: 150px;
     font-size: 20px;
+}
+
+.btn:hover{
+    border:0.5px solid var(--circleColor);
+    cursor: pointer;
 }
 
 .circle {
@@ -96,8 +117,133 @@ input{
     justify-content: center;
     align-items: center;
     color: #fff;
+    transition: widht 1s;
+    transition: height 1s;
+    
 }
+
+.circle:hover{
+    width: 810px;
+    height: 810px;
+    transform: translate(-10px);
+}
+
+
 
 .circle img{
     width: 350px;
+}
+
+/*annimation fadein*/
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}
+
+.Fade_in {
+    animation: fade-in 4s;
+}
+
+/*annimation faderight*/
+
+@keyframes fade-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(10%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+
+    }
+    
+}
+
+.Fade_right {
+    animation: fade-right 3s;
+}
+
+/*annimation fadeleft*/
+
+@keyframes fade-left {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(-15%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+    
+}
+
+.Fade_left {
+    animation: fade-left 3s;
+}
+
+/*annimation fadeup*/
+
+@keyframes fade-up {
+    0%{
+        transform: translateY(150%);
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+    
+}
+
+.fade_up {
+    animation: fade-up 5s;
+}
+
+/*annimation fadedown*/
+
+@keyframes fade-down {
+    0%{
+        transform: translateY(-150%);
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+    
+}
+
+.formulaire {
+    animation: fade-down 5s;
+}
+
+/*annimation circle*/
+
+@keyframes fade-big {
+    0%{
+        width: 850px;
+        height: 850px;
+        transform: translate(-25%,-25%);
+    }
+    100%{
+        width: 800px;
+        height: 800px;
+        transform: translate(0%,0%);
+
+    }
+    
+}
+
+.Fade_big {
+    animation: fade-big 5s;
 }
