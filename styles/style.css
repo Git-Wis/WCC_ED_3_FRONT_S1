@@ -1,0 +1,25 @@
+:root {
+    --bgColor:#f6b606;
+    --circleColor:#1f1f1f;
+    --secondColor:#a3f965;
+    --firdColor:#df5252;
+}
+
+body{
+    max-width: 100vh;
+    overflow: hidden;
+    background-color: var(--bgColor);
+}
+
+nav{
+    margin: 20px;
+    padding: 10px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2{
+    margin: 0;
+}
